@@ -28,6 +28,7 @@ In c-icap.conf:
     Service foo /some/path/foo.rb
 
 See examples/icap.rb for better understanding what should be implemented by a service.
+The name of the service class name must be `IcapService`, as this is the name the module will search for.
 You will need to call .force_encoding('ASCII-8BIT') on the response body, unless it's
 already in ASCII-8BIT encoding.
 
